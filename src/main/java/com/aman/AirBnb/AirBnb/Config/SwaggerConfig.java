@@ -15,9 +15,9 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("Airbnb API")
+                        .title("Airbnb Booking API")
                         .version("1.0")
-                        .description("API documentation for the Airbnb Backend clone application, Created By Aman Kumar"))
+                        .description("A full-featured hotel booking REST API with JWT authentication, Stripe payments, and inventory management. Built by Tirth Shah."))
                         .addSecurityItem(new SecurityRequirement().addList("BearerAuth"))
                         .components(new Components()
                                 .addSecuritySchemes("BearerAuth",
